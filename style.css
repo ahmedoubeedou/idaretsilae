@@ -1,0 +1,125 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+body{
+    height:100vh;
+    background-color: rgba(0, 0, 0, 0.888);
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+.container{
+    height: 100%;
+    width: 80%;
+}
+.tete{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  
+}
+.main{
+width:95%;
+display: flex;
+flex-direction: column;
+gap:4px;
+}
+.tete div{
+    width:95%;
+    
+
+}
+input{
+    height: 30px;
+    width:95%;
+    padding:0px 8px; 
+    border-radius: 7px;
+    outline: none;
+    border:none;
+    color:white;
+    background-color: black;
+}
+.pri{
+    display: flex;
+    align-items: center;
+   
+    gap:3px;
+}
+.pri input{
+    width:20%;
+
+}
+button{
+    width:95%;
+    border-radius: 8px;
+    border:none;
+    text-align: center;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    font-size: 13px;
+    transition: 0.5s;
+}
+button:hover{
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+.serchby{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+   
+    gap: 5px;
+    
+}
+.serchby button{
+    width:43%;
+}
+table{
+    width:95%;
+    text-align: center;
+}
+.delupd{
+    width:60px;
+    height: 20px;
+    font-size: 12px;
+    border-radius: 10px;
+    color: white;
+
+}
+tr , th , td{
+    width:50px;
+}
+.pri p{
+    height: 20px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pri p::before{
+content: "total:";
+}
+input:hover{
+    cursor: pointer;
+
+}
+@media (min-width: 100px) and (max-width:770px){
+    table{
+        width:400px;
+        text-transform: lowercase;
+        margin-left: -30px;
+    }
+}

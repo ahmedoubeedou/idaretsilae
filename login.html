@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>CRUDS</h1>
+            <p>CREATE READ UPDATE DELETE SEARCH</p>
+            <p id="veri"></p>
+        </div>
+        <div class="main">
+            <div class="tete">
+        <div class="title">
+               <input type="text" onkeyup="delmesag()" placeholder="title" id="title" />
+        </div> 
+        <div class="pri">
+              <input type="number"  onkeyup="totals()" placeholder="price" id="price" />
+              <input type="number"  onkeyup="totals()" placeholder="taxes" id="taxes" />
+              <input type="number"  onkeyup="totals()" placeholder="ads" id="ads" />
+              <input type="number"  onkeyup="totals()" placeholder="discount" id="discount" />  
+              <p id="total"></p>
+        </div> 
+        <div class="count">
+           <input type="number" onkeyup="delmesag()" placeholder="count" id="count" />     
+        </div> 
+        <div class="catogrie">
+           <input type="text" onkeyup="delmesag()" placeholder="catogrie" id="catgorie" />     
+        </div> 
+        <div class="creat">
+               <button id="creat" onclick="create()">CREATE</button> 
+        </div> 
+        <div class="serche">
+                <input type="text" placeholder="Serche" onkeyup="serchtc(this.placeholder)" id="serche" />
+        </div> 
+        <div class="serchby">
+             <button id="serchet" onclick="serches(this.id)">Search BY Title</button> 
+             <button id="serchec" onclick="serches(this.id)">Search BY Categorie</button>    
+        </div> 
+        <div class="delat">
+             <button id="delate" onclick="delAll()">Deleat All</button>    
+        </div>
+            </div>
+            <table border="1px">
+        <thead>
+      <tr>
+            <th>ID</th>
+            <th>TITLE</th>
+            <th>PRICE</th>
+            <th>TAXES</th>
+            <th>ADS</th>
+            <th>DISCOUNT</th>
+            <th>TOTAL</th>
+            <th>CATEGORIE</th>
+            <th>UPDATE</th>
+            <th>DELETE</th>
+      </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="login.js"> </script>
+</body>
+</html>
