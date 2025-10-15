@@ -121,5 +121,7 @@ input:hover{
         width:400px;
         text-transform: lowercase;
         margin-left: -30px;
+        font-size:11px;
     }
+
 }
